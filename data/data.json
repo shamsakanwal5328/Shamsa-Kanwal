@@ -1,0 +1,527 @@
+{
+  "site": {
+    "url": "https://shamsa-kanwal.vercel.app",
+    "title": "Shamsa Kanwal — Psychology Academic Portfolio",
+    "description": "Academic portfolio of Shamsa Kanwal, BS Psychology graduate: research on self-esteem and life satisfaction in diabetes, clinical training and evidence.",
+    "locale": "en_GB",
+    "lastUpdated": "October 2026"
+  },
+  "personal": {
+    "name": "Shamsa Kanwal",
+    "initials": "SK",
+    "title": "Psychology Graduate | Research & Clinical Psychology",
+    "location": "Pakistan",
+    "email": "",
+    "profileImage": "",
+    "profileImageAlt": "Portrait of Shamsa Kanwal"
+  },
+  "hero": {
+    "eyebrow": "Academic portfolio",
+    "description": "BS Psychology graduate from the Virtual University of Pakistan (CGPA 3.10/4.00). Undergraduate research on self-esteem and life satisfaction among diabetic patients (N = 200, analysed in SPSS), and supervised clinical psychology training in a district hospital setting.",
+    "goal": "Seeking master's study in clinical, health and mental-health psychology.",
+    "primaryCta": { "label": "View Research", "href": "/research/self-esteem-life-satisfaction" },
+    "secondaryCta": { "label": "Download CV", "href": "/documents/Shamsa-Kanwal-CV.pdf" }
+  },
+  "academicSnapshot": [
+    { "label": "Degree", "value": "BS Psychology", "detail": "4-year programme, 133 credit hours", "href": "/about" },
+    { "label": "University", "value": "Virtual University of Pakistan", "detail": "Session Spring 2022 – Fall 2025; conferred July 2026", "href": "/about" },
+    { "label": "CGPA", "value": "3.10 / 4.00", "detail": "Medium of instruction: English", "href": "/about" },
+    { "label": "Research", "value": "N = 200", "detail": "Correlational study, analysed in SPSS", "href": "/research/self-esteem-life-satisfaction" },
+    { "label": "Clinical training", "value": "District hospital", "detail": "Supervised internship, Apr – Jun 2025", "href": "/experience" },
+    { "label": "Research tools", "value": "SPSS · RSES · SWLS", "detail": "Reliability, correlation, t-tests", "href": "/research/self-esteem-life-satisfaction" }
+  ],
+  "about": {
+    "summary": [
+      "I completed a four-year Bachelor of Science in Psychology at the Virtual University of Pakistan (session Spring 2022 – Fall 2025; degree conferred July 2026) with a CGPA of 3.10/4.00 across 133 credit hours. The programme was taught and examined in English.",
+      "My coursework progressed from introductory psychology to research methods, statistics (SPSS), psychological testing and clinical psychology. In my final year I took part in a quantitative correlational study of self-esteem and life satisfaction among 200 diabetic patients, which was approved by the Department of Psychology in November 2025.",
+      "Alongside my degree I completed supervised clinical psychology training at Isfandyar Bukhari District Hospital, Attock, and a community psychology project with women living in a shelter-home setting. These experiences shaped my interest in how psychological factors affect wellbeing and quality of life, particularly among people living with chronic illness or difficult circumstances."
+    ],
+    "researchDirection": "I want to keep studying the psychological side of physical health: how self-perception, coping and social support relate to wellbeing in people living with chronic conditions, and how psychological assessment can inform patient-centred care.",
+    "academicInterests": [
+      "Health psychology and chronic illness",
+      "Self-esteem, life satisfaction and wellbeing",
+      "Clinical psychology and psychological assessment",
+      "Community mental health"
+    ],
+    "goals": [
+      "Pursue a master's degree in clinical, health or mental-health psychology.",
+      "Strengthen quantitative research skills beyond undergraduate level, including study design and statistical analysis.",
+      "Build supervised experience in psychological assessment and evidence-based practice."
+    ],
+    "academicStrengths": [
+      "Psychological research design",
+      "Quantitative data analysis using SPSS",
+      "Psychological assessment techniques",
+      "Behavioural observation",
+      "Scientific report writing"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science (BS) in Psychology",
+      "programme": "4-year programme",
+      "institution": "Virtual University of Pakistan",
+      "location": "Pakistan",
+      "period": "Spring 2022 – Fall 2025",
+      "graduation": "Degree conferred 6 July 2026",
+      "graduationYear": "2026",
+      "cgpa": "3.10 / 4.00",
+      "creditHours": 133,
+      "status": "Graduated",
+      "mediumOfInstruction": "English",
+      "coursework": [
+        "Research Methods in Psychology",
+        "Experimental Psychology",
+        "Statistical Packages (SPSS)",
+        "Psychological Testing and Measurement",
+        "Clinical Psychology",
+        "Health Psychology",
+        "Abnormal Psychology",
+        "Developmental Psychology",
+        "Cognitive Psychology",
+        "Social Psychology",
+        "Personality Psychology",
+        "Organizational Psychology"
+      ],
+      "highlights": [
+        "Final-year research project (PSY499): self-esteem and life satisfaction among diabetic patients",
+        "Clinical psychology internship (PSY619) at Isfandyar Bukhari District Hospital, Attock",
+        "Community psychology project (PSY612 — Active Citizenship): Pathways to Healing"
+      ]
+    }
+  ],
+  "research": [
+    {
+      "slug": "self-esteem-life-satisfaction",
+      "featured": true,
+      "title": "Relationship Between Self-Esteem and Life Satisfaction Among Diabetic Patients",
+      "shortTitle": "Self-Esteem and Life Satisfaction in Diabetes",
+      "type": "Quantitative correlational study",
+      "status": "Completed — approved November 2025",
+      "year": "2025",
+      "course": "PSY499 — Final Year Research Project",
+      "institution": "Department of Psychology, Virtual University of Pakistan",
+      "supervisor": "Ms. Muskan Zahra",
+      "teamContext": "Group research project completed by a team of four undergraduate students.",
+      "metaDescription": "Undergraduate correlational study of self-esteem and life satisfaction among 200 diabetic patients (RSES, SWLS, SPSS): methods, results and findings.",
+      "summary": "Undergraduate research project examining the relationship between self-esteem and life satisfaction among 200 diabetic patients, using the Rosenberg Self-Esteem Scale and the Satisfaction With Life Scale, with statistical analysis conducted in SPSS.",
+      "keyFigures": [
+        { "label": "Participants", "value": "200", "detail": "100 men, 100 women" },
+        { "label": "Correlation", "value": "r = .674", "detail": "p < .01, self-esteem and life satisfaction" },
+        { "label": "Reliability", "value": "α = .825 / .788", "detail": "RSES / SWLS in this sample" }
+      ],
+      "objectives": [
+        "To find out the relationship between self-esteem and life satisfaction among diabetic patients.",
+        "To explore whether gender differences exist in self-esteem and life satisfaction among diabetic patients."
+      ],
+      "researchQuestion": "Is self-esteem related to life satisfaction among people living with diabetes, and do men and women differ on either variable?",
+      "hypotheses": [
+        { "id": "H1", "text": "There is likely to be a positive relationship between self-esteem and life satisfaction among diabetic patients.", "outcome": "Supported" },
+        { "id": "H2", "text": "There is likely to be a gender difference in self-esteem among diabetic patients.", "outcome": "Not supported" },
+        { "id": "H3", "text": "There is likely to be a gender difference in life satisfaction among diabetic patients.", "outcome": "Not supported" }
+      ],
+      "background": [
+        "Diabetes is a chronic metabolic condition that requires continuous self-management: blood glucose monitoring, medication adherence and dietary restriction. Beyond its physical effects, this ongoing demand can affect emotional wellbeing and how people evaluate their own lives.",
+        "Previous studies in Pakistan, Jordan, Poland, Iran and Turkey reported links between self-esteem, distress, stigma and quality of life in diabetic patients. The study's rationale noted that much prior work focused on the medical side of diabetes, and that gender differences in these psychological outcomes have been inconsistent across studies."
+      ],
+      "methodology": {
+        "approach": "Quantitative",
+        "design": "Correlational (cross-sectional) design, observing natural variation without manipulation.",
+        "sampling": "Non-probability convenience sampling from accessible diabetic clinics and healthcare settings.",
+        "participants": "200 adults (100 men, 100 women) diagnosed with Type 1 or Type 2 diabetes, aged 30–65.",
+        "inclusionCriteria": [
+          "Formal diagnosis of Type 1 or Type 2 diabetes for at least 12 months",
+          "Able to understand the purpose of the study and give informed consent"
+        ],
+        "exclusionCriteria": [
+          "Serious mental health conditions or cognitive impairment affecting participation",
+          "Life-threatening or severe acute medical conditions",
+          "Unable to read, understand or complete the questionnaires"
+        ],
+        "dataCollection": "After permission from clinic administrators, eligible patients received an explanation of the study and gave written informed consent. Participants completed a demographic form, the RSES and the SWLS in a quiet area of the clinic. Data collection was completed within one month.",
+        "ethics": [
+          "Written informed consent from all participants",
+          "Confidentiality and anonymity of responses",
+          "Voluntary participation with the right to withdraw at any time",
+          "Data stored and used solely for research purposes"
+        ]
+      },
+      "instruments": [
+        { "name": "Rosenberg Self-Esteem Scale", "abbreviation": "RSES", "citation": "Rosenberg, 1965", "items": 10, "measures": "Global self-esteem", "sampleAlpha": ".825" },
+        { "name": "Satisfaction With Life Scale", "abbreviation": "SWLS", "citation": "Diener et al., 1985", "items": 5, "measures": "Global cognitive judgement of life satisfaction (7-point scale)", "sampleAlpha": ".788" },
+        { "name": "Demographic information form", "abbreviation": "", "citation": "", "items": 0, "measures": "Age, gender, education, marital status, type and duration of diabetes", "sampleAlpha": "" }
+      ],
+      "variables": [
+        { "name": "Self-esteem", "role": "Study variable", "measure": "RSES total score" },
+        { "name": "Life satisfaction", "role": "Study variable", "measure": "SWLS total score" },
+        { "name": "Gender", "role": "Grouping variable", "measure": "Demographic form (men / women)" }
+      ],
+      "analysis": {
+        "software": "IBM SPSS Statistics",
+        "procedures": [
+          "Descriptive statistics (mean, standard deviation, range)",
+          "Internal consistency reliability (Cronbach's alpha)",
+          "Pearson product-moment correlation",
+          "Independent samples t-test (men vs women)"
+        ]
+      },
+      "results": {
+        "descriptives": [
+          { "measure": "RSES (self-esteem)", "n": 200, "min": 17, "max": 50, "mean": "29.25", "sd": "5.65" },
+          { "measure": "SWLS (life satisfaction)", "n": 200, "min": 5, "max": 22, "mean": "13.50", "sd": "3.46" }
+        ],
+        "reliability": [
+          { "scale": "RSES", "items": 10, "alpha": ".825" },
+          { "scale": "SWLS", "items": 5, "alpha": ".788" }
+        ],
+        "correlation": { "variables": "Self-esteem and life satisfaction", "r": ".674", "p": "< .01", "n": 200 },
+        "groupComparisons": [
+          { "measure": "Self-esteem (RSES)", "t": "−0.58", "p": ".570", "significant": false },
+          { "measure": "Life satisfaction (SWLS)", "t": "0.58", "p": ".562", "significant": false }
+        ]
+      },
+      "findings": [
+        "Self-esteem and life satisfaction showed a strong, statistically significant positive correlation (r = .674, p < .01): patients with higher self-esteem tended to report greater satisfaction with life.",
+        "Mean scores indicated moderate levels of both self-esteem (M = 29.25, SD = 5.65) and life satisfaction (M = 13.50, SD = 3.46) in the sample.",
+        "There were no significant gender differences in self-esteem (t = −0.58, p = .570) or life satisfaction (t = 0.58, p = .562).",
+        "Both scales showed good internal consistency in this sample (RSES α = .825; SWLS α = .788)."
+      ],
+      "conclusion": "The study concluded that self-esteem is closely associated with life satisfaction among people with diabetes, and that psychological wellbeing deserves attention alongside medical care. Because the design was correlational, the results describe an association, not a cause-and-effect relationship.",
+      "limitations": [
+        "Cross-sectional, correlational design cannot establish cause and effect.",
+        "Convenience sampling from a limited number of clinics may limit generalisability.",
+        "Self-report questionnaires may be influenced by personal bias or mood.",
+        "Other relevant variables (e.g., socioeconomic status, family support) were not measured."
+      ],
+      "implications": [
+        "Supports integrating psychological support and counselling into diabetes care programmes.",
+        "Suggests educational programmes and support groups that build patients' confidence in managing their condition.",
+        "Points to further research on psychological wellbeing and diabetes outcomes."
+      ],
+      "reflection": "This project was my first experience of carrying a study from proposal to final report: reviewing literature, working with standardised instruments, collecting data with informed consent, and interpreting statistical output honestly, including the hypotheses that were not supported. It strengthened my interest in health psychology and in how psychological factors relate to living with chronic illness.",
+      "role": [
+        "Literature review and development of the research proposal",
+        "Data collection from diabetic patients — approximately 150 of the 200 responses",
+        "Managing participant responses, data entry and cleaning",
+        "Statistical analysis in SPSS and interpretation of findings",
+        "Writing the research report"
+      ],
+      "skills": [
+        "Quantitative research design",
+        "Literature review",
+        "Standardised psychological instruments",
+        "Ethical data collection and informed consent",
+        "Data entry and cleaning",
+        "SPSS",
+        "Reliability analysis",
+        "Correlation and t-tests",
+        "Scientific report writing"
+      ],
+      "workflow": [
+        { "step": "Research problem", "detail": "Psychological wellbeing in people living with diabetes" },
+        { "step": "Literature review", "detail": "Prior studies on self-esteem, quality of life and diabetes" },
+        { "step": "Research design", "detail": "Quantitative correlational design; three hypotheses" },
+        { "step": "Data collection", "detail": "200 patients from diabetic clinics; RSES, SWLS, demographics" },
+        { "step": "SPSS analysis", "detail": "Descriptives, Cronbach's alpha, Pearson r, t-tests" },
+        { "step": "Findings", "detail": "r = .674 (p < .01); no gender differences" },
+        { "step": "Conclusion", "detail": "Approved by the Department of Psychology, November 2025" }
+      ],
+      "timeline": [
+        { "date": "2025", "title": "Part A — proposal", "description": "Introduction, background and literature review submitted as PSY499 Part A." },
+        { "date": "2025", "title": "Data collection and analysis", "description": "Questionnaires administered to 200 diabetic patients; data analysed in SPSS." },
+        { "date": "16 Nov 2025", "title": "Final report approved", "description": "Final project report approved by the research supervisor, Department of Psychology." }
+      ],
+      "documents": [
+        { "label": "Research questionnaire (blank instrument)", "url": "/documents/research/self-esteem-life-satisfaction-questionnaire.pdf", "type": "PDF", "note": "Consent information, demographic form, RSES and SWLS as administered." }
+      ],
+      "reportNote": "The full research report includes other students' identifying details and is therefore not published here. It is available to admissions committees and supervisors on request.",
+      "keywords": ["self-esteem", "life satisfaction", "diabetes", "health psychology", "wellbeing", "SPSS", "correlational research"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "self-esteem-life-satisfaction",
+      "title": "Self-Esteem and Life Satisfaction Among Diabetic Patients",
+      "category": "Research project",
+      "context": "PSY499 — Final Year Research Project",
+      "year": "2025",
+      "description": "Group quantitative study of 200 diabetic patients using the RSES and SWLS. Contributed to the literature review, data collection, SPSS analysis and report writing.",
+      "skills": ["SPSS", "Correlational design", "RSES", "SWLS", "Report writing"],
+      "outcome": "Strong positive correlation between self-esteem and life satisfaction (r = .674, p < .01); report approved November 2025.",
+      "link": { "label": "Read the research", "url": "/research/self-esteem-life-satisfaction" },
+      "confidentialityNote": ""
+    },
+    {
+      "id": "pathways-to-healing",
+      "title": "Active Citizenship: Pathways to Healing",
+      "category": "Community psychology project",
+      "context": "PSY612 — Active Citizenship",
+      "year": "2025",
+      "description": "Group community-based project with women living in a shelter-home setting. I contributed the literature review section on art therapy and psychological healing, and helped plan and facilitate art-based activities: My Inner World, Safe Places, Freedom and Hope, and My Identity.",
+      "skills": ["Literature review", "Art-based activities", "Rapport building", "Behavioural observation", "Group facilitation", "Ethical practice with vulnerable participants"],
+      "outcome": "The project report recorded increased participant engagement, emotional expression and social interaction. These outcomes were based on qualitative observation and participant feedback, not standardised pre/post measurement.",
+      "link": null,
+      "confidentialityNote": "The project report contains photographs and artwork of participants from a vulnerable population, so it is not published online."
+    },
+    {
+      "id": "internship-case-report",
+      "title": "Clinical Internship Case Report",
+      "category": "Clinical case report",
+      "context": "PSY619 — Internship in Clinical Psychology",
+      "year": "2025",
+      "description": "Supervised case study prepared during my clinical internship, covering background history, presenting complaints, Mental Status Examination, informal and formal assessment, DSM-5-based formulation, prognosis and management plan.",
+      "skills": ["Case history taking", "Mental Status Examination", "Psychological assessment", "DSM-5 case formulation", "Clinical report writing"],
+      "outcome": "Submitted June 2025 as part of the internship requirements.",
+      "link": null,
+      "confidentialityNote": "Contains clinical information about a patient, so it is not published, in line with patient confidentiality."
+    }
+  ],
+  "experience": [
+    {
+      "id": "dhq-attock-internship",
+      "organization": "Isfandyar Bukhari District Hospital (DHQ), Attock",
+      "position": "Clinical Psychology Intern",
+      "type": "Supervised clinical internship (PSY619)",
+      "startDate": "1 April 2025",
+      "endDate": "12 June 2025",
+      "location": "Attock, Pakistan",
+      "supervision": "Under the supervision of qualified clinical psychologists, including Dr Humma Ghalib",
+      "summary": "Supervised clinical psychology training completed as part of the BS Psychology degree, applying coursework concepts within a hospital setting.",
+      "responsibilities": [
+        "Patient interaction and professional rapport building",
+        "Clinical interviewing, intake and case history taking",
+        "Mental Status Examination (MSE) under supervision",
+        "Behavioural observation and clinical documentation",
+        "Supervised exposure to standardised psychological assessment",
+        "Observation of individual and group therapy sessions, psychoeducation and CBT-related approaches",
+        "Hospital ward rounds and Electronic Record System (ERS) operations"
+      ],
+      "skills": ["Clinical interviewing", "MSE", "Behavioural observation", "Clinical documentation", "Professional communication", "Confidentiality"],
+      "learningOutcomes": [
+        "Connected undergraduate theory with practice in a healthcare setting",
+        "Developed a structured approach to collecting and organising clinical information",
+        "Learned to work within the boundaries of a supervised student role"
+      ],
+      "scopeNote": "All clinical activities were performed under supervision; I did not independently diagnose or treat patients.",
+      "evidence": [
+        { "label": "Internship case report (confidential — not published)", "url": "" }
+      ]
+    },
+    {
+      "id": "dhq-attock-continued",
+      "organization": "Isfandyar Bukhari District Hospital (DHQ), Attock",
+      "position": "Continued Supervised Clinical Experience & Intern Coordination",
+      "type": "Supervised clinical experience",
+      "startDate": "After June 2025",
+      "endDate": "",
+      "location": "Attock, Pakistan",
+      "supervision": "Under the supervision of senior clinical psychologists",
+      "summary": "After the internship I continued to gain supervised clinical exposure at the same hospital and supported coordination of clinical psychology interns.",
+      "responsibilities": [
+        "Continued supervised practice in intake assessment, case history taking, MSE and behavioural observation",
+        "Supervised exposure to DSM-5-based case formulation and personality assessment",
+        "Clinical case discussions, ward rounds and case record management",
+        "Administrator of the department's clinical psychology interns' communication group: sharing announcements, schedules and documents",
+        "Guiding newly joined interns on departmental procedures"
+      ],
+      "skills": ["Team coordination", "Peer guidance", "Clinical reasoning", "Multidisciplinary collaboration", "Time management"],
+      "learningOutcomes": [
+        "Broader exposure to a range of clinical presentations, observed under supervision",
+        "Experience coordinating communication within a clinical team"
+      ],
+      "scopeNote": "Clinical exposure included observation of anxiety, depressive, bipolar, obsessive-compulsive, personality, schizophrenia-spectrum, substance use and neurodevelopmental presentations, always under supervision. No patient information is published.",
+      "evidence": []
+    },
+    {
+      "id": "mpc-online-internship",
+      "organization": "MindWise Psychologist Community (MPC)",
+      "position": "Clinical Psychology Intern (online, with practical exposure)",
+      "type": "2-month clinical psychology internship",
+      "startDate": "20 October 2025",
+      "endDate": "3 January 2026",
+      "location": "Online — Imran Khan Drug Rehab and Psychiatric Hospital, Peshawar",
+      "supervision": "Under the supervision of Mr. Niaz Ahmad (Clinical Psychologist)",
+      "summary": "Two-month clinical psychology internship organised by MindWise Psychologist Community, conducted online with practical exposure.",
+      "responsibilities": [],
+      "skills": [],
+      "learningOutcomes": [],
+      "scopeNote": "",
+      "evidence": [
+        { "label": "Internship certificate", "url": "/certificates#mpc-clinical-internship" }
+      ]
+    }
+  ],
+  "researchInterests": [
+    {
+      "id": "health-psychology",
+      "topic": "Health psychology and chronic illness",
+      "description": "How living with a long-term condition such as diabetes relates to self-perception, coping and quality of life.",
+      "relatedWork": [{ "label": "Self-esteem and life satisfaction among diabetic patients", "url": "/research/self-esteem-life-satisfaction" }],
+      "evidence": ["Final-year research project", "Health Psychology coursework"]
+    },
+    {
+      "id": "wellbeing",
+      "topic": "Self-esteem, life satisfaction and wellbeing",
+      "description": "Measurement of subjective wellbeing and its psychological correlates, using standardised instruments such as the RSES and SWLS.",
+      "relatedWork": [{ "label": "Research results and instruments", "url": "/research/self-esteem-life-satisfaction#analysis" }],
+      "evidence": ["RSES and SWLS administration", "Reliability and correlation analysis in SPSS"]
+    },
+    {
+      "id": "clinical-assessment",
+      "topic": "Clinical psychology and psychological assessment",
+      "description": "Structured clinical interviewing, Mental Status Examination and assessment as the basis for case formulation.",
+      "relatedWork": [{ "label": "Clinical internship experience", "url": "/experience" }],
+      "evidence": ["Supervised internship at DHQ Attock", "Internship case report (PSY619)", "Psychological Testing and Clinical Psychology coursework"]
+    },
+    {
+      "id": "community-mental-health",
+      "topic": "Community mental health",
+      "description": "Psychological wellbeing among vulnerable groups, and how accessible, community-based activities can support emotional expression and social connection.",
+      "relatedWork": [{ "label": "Pathways to Healing project", "url": "/projects#pathways-to-healing" }],
+      "evidence": ["Community psychology project (PSY612)", "Workshops on mental-health stigma, suicide prevention and Psychological First Aid"]
+    }
+  ],
+  "certificates": [
+    {
+      "id": "mpc-clinical-internship",
+      "title": "Certificate of Internship — Clinical Psychology",
+      "provider": "MindWise Psychologist Community (MPC)",
+      "date": "Issued 15 January 2026",
+      "topic": "Clinical psychology internship (20 Oct 2025 – 3 Jan 2026)",
+      "category": "Internship",
+      "credentialId": "Reg. No. mwpc-011",
+      "verification": "QR verification code on certificate",
+      "verificationUrl": "",
+      "image": "/images/certificates/mpc-clinical-internship.webp",
+      "file": "/documents/certificates/mpc-clinical-internship.pdf"
+    },
+    {
+      "id": "psychological-first-aid",
+      "title": "Workshop on Psychological First Aid Training",
+      "provider": "Warda's Mind Care Institute, in collaboration with University of Buner",
+      "date": "2 September 2025",
+      "topic": "Psychological First Aid",
+      "category": "Workshop — certificate of participation",
+      "credentialId": "PFA-81",
+      "verification": "",
+      "verificationUrl": "",
+      "image": "/images/certificates/psychological-first-aid.webp",
+      "file": "/documents/certificates/psychological-first-aid.png"
+    },
+    {
+      "id": "healing-through-community",
+      "title": "Healing Through Community: Why We Grow Better Together",
+      "provider": "MindWise Psychologist Community (MPC)",
+      "date": "20 September 2025",
+      "topic": "Community support and psychological wellbeing",
+      "category": "Online webinar — certificate of participation",
+      "credentialId": "Sr. No. 012",
+      "verification": "",
+      "verificationUrl": "",
+      "image": "/images/certificates/healing-through-community.webp",
+      "file": "/documents/certificates/healing-through-community.pdf"
+    },
+    {
+      "id": "drug-abuse-addiction",
+      "title": "The Effect of Drug Abuse and Addiction",
+      "provider": "MindWise Psychologist Community (MPC)",
+      "date": "2 October 2025",
+      "topic": "Substance use and addiction",
+      "category": "Online workshop — certificate of appreciation",
+      "credentialId": "Sr. No. 53",
+      "verification": "",
+      "verificationUrl": "",
+      "image": "/images/certificates/drug-abuse-addiction.webp",
+      "file": "/documents/certificates/drug-abuse-addiction.pdf"
+    },
+    {
+      "id": "breaking-the-stigma",
+      "title": "Breaking the Stigma: Let's Talk About Mental Health",
+      "provider": "MindWise Psychologist Community (MPC)",
+      "date": "10 October 2025",
+      "topic": "Mental-health awareness and stigma",
+      "category": "Online webinar — certificate of appreciation",
+      "credentialId": "Sr. No. 116",
+      "verification": "",
+      "verificationUrl": "",
+      "image": "/images/certificates/breaking-the-stigma.webp",
+      "file": "/documents/certificates/breaking-the-stigma.pdf"
+    },
+    {
+      "id": "adult-suicide-crises",
+      "title": "Adult Suicide Crises: A Solution from Psychological Perspective",
+      "provider": "MindWise Psychologist Community (MPC)",
+      "date": "Date not stated on certificate",
+      "topic": "Suicide prevention and crisis awareness",
+      "category": "Online workshop — certificate of participation",
+      "credentialId": "Sr. No. 042",
+      "verification": "",
+      "verificationUrl": "",
+      "image": "/images/certificates/adult-suicide-crises.webp",
+      "file": "/documents/certificates/adult-suicide-crises.pdf"
+    }
+  ],
+  "otherLearning": [
+    {
+      "title": "Mental Health Awareness Workshop",
+      "provider": "College of Nursing, DHQ Hospital, Attock",
+      "date": "15 September 2025",
+      "topic": "Mental-health awareness in a healthcare setting",
+      "evidence": "No certificate issued"
+    },
+    {
+      "title": "PAVE Community — Psychological Awareness & Volunteer Efforts",
+      "provider": "PAVE Community, Attock",
+      "date": "26 October 2025",
+      "topic": "Community psychological awareness and volunteering",
+      "evidence": "No certificate issued"
+    }
+  ],
+  "awards": [
+    {
+      "title": "HEC Laptop Scheme",
+      "issuer": "Higher Education Commission (HEC), Pakistan",
+      "date": "",
+      "description": "Educational laptop awarded through the Virtual University of Pakistan on the basis of academic eligibility."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Research",
+      "items": ["Quantitative research design", "Literature review", "Questionnaire-based data collection", "Informed consent procedures", "Data entry and cleaning", "Scientific report writing"]
+    },
+    {
+      "category": "Statistics",
+      "items": ["SPSS", "Descriptive statistics", "Cronbach's alpha", "Pearson correlation", "Independent samples t-test"]
+    },
+    {
+      "category": "Assessment (supervised)",
+      "items": ["Clinical interviewing", "Case history taking", "Mental Status Examination", "Behavioural observation", "RSES", "SWLS", "Clinical documentation"]
+    },
+    {
+      "category": "Professional",
+      "items": ["Confidentiality and ethics", "Professional communication", "Team coordination", "Multidisciplinary collaboration"]
+    },
+    {
+      "category": "Languages",
+      "items": ["English (medium of instruction)"]
+    }
+  ],
+  "cv": {
+    "pdfUrl": "/documents/Shamsa-Kanwal-CV.pdf",
+    "fileName": "Shamsa-Kanwal-CV.pdf",
+    "lastUpdated": "October 2026",
+    "references": "Two academic references from faculty of the Department of Psychology, Virtual University of Pakistan, are available on request."
+  },
+  "contact": {
+    "intro": "I welcome enquiries from admissions committees, scholarship reviewers and prospective research supervisors.",
+    "email": "",
+    "availability": "Open to master's study and research assistant opportunities in psychology.",
+    "responseNote": "I aim to reply within a few working days."
+  },
+  "socialLinks": {
+    "linkedin": "",
+    "googleScholar": "",
+    "orcid": ""
+  }
+}
