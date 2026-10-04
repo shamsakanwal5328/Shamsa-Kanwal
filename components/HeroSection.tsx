@@ -28,15 +28,16 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="hidden lg:block">
+        <div className={personal.profileImage ? "order-first lg:order-none" : "hidden lg:block"}>
           {personal.profileImage ? (
             <Image
               src={personal.profileImage}
               alt={personal.profileImageAlt}
               width={280}
-              height={336}
+              height={280}
               priority
-              className="h-[336px] w-[280px] rounded-lg border border-border object-cover"
+              sizes="(min-width: 1024px) 280px, 112px"
+              className="h-28 w-28 rounded-full border-4 border-accent-soft object-cover lg:h-[280px] lg:w-[280px] lg:border-8"
             />
           ) : (
             <div
