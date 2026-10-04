@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 env:
-  NODE_VERSION: "22"
+  NODE_VERSION: "24"
   NETLIFY_CLI_VERSION: "27"
   NEXT_TELEMETRY_DISABLED: "1"
   # Production URL used for canonical links, sitemap and Open Graph tags.
