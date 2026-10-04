@@ -32,6 +32,20 @@ Public files are in `public/documents/` (certificates, the blank research questi
 letters, the full research report, the internship case report or the Pathways to Healing report: they contain CNIC
 numbers, other students' details, or patient/participant information.
 
-## Deployment
+## Deployment (Netlify + GitHub Actions)
 
-Deploys to Vercel as-is (`npm run build`).
+[.github/workflows/ci-cd.yml](.github/workflows/ci-cd.yml) runs on every push and pull request:
+
+| Trigger | Jobs |
+| --- | --- |
+| Pull request to `main` | asset check, type check, lint, build, then a Netlify **preview** deploy with the URL posted on the PR |
+| Push to `main` | same checks, then a **production** deploy and a smoke test of key URLs |
+
+GitHub configuration (Settings → Secrets and variables → Actions):
+
+- Secret `NETLIFY_AUTH_TOKEN`: Netlify personal access token
+- Secret `NETLIFY_SITE_ID`: Netlify site ID (Project configuration → General)
+- Variable `SITE_URL`: the live URL, e.g. `https://your-site.netlify.app`
+
+Netlify's own Git builds should be stopped (Project configuration → Build & deploy → Continuous deployment →
+Stop builds) so each commit is deployed once, by GitHub Actions. Build settings live in [netlify.toml](netlify.toml).

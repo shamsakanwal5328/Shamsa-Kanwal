@@ -1,0 +1,124 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# One run per branch/PR at a time; a newer push cancels the older run.
+concurrency:
+  group: ci-cd-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: "22"
+  NETLIFY_CLI_VERSION: "27"
+  NEXT_TELEMETRY_DISABLED: "1"
+  # Production URL used for canonical links, sitemap and Open Graph tags.
+  NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+
+jobs:
+  verify:
+    name: Type check, lint, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+      - name: Check files referenced in data.json exist
+        run: npm run check:assets
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+
+  deploy-preview:
+    name: Deploy preview (pull request)
+    needs: verify
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build and deploy preview to Netlify
+        id: deploy
+        run: |
+          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build \
+            --alias "pr-${{ github.event.pull_request.number }}" \
+            --message "PR #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}" \
+            --json > deploy.json
+          echo "url=$(node -p "require('./deploy.json').deploy_url")" >> "$GITHUB_OUTPUT"
+
+      - name: Comment preview URL on the pull request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `Netlify preview: ${{ steps.deploy.outputs.url }}`;
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number });
+            const existing = comments.find((c) => c.user.type === "Bot" && c.body.startsWith("Netlify preview:"));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
+
+  deploy-production:
+    name: Deploy to production
+    needs: verify
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build and deploy to Netlify (production)
+        id: deploy
+        run: |
+          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build --prod \
+            --message "${{ github.sha }}" \
+            --json > deploy.json
+          echo "url=$(node -p "const d = require('./deploy.json'); d.url || d.deploy_url")" >> "$GITHUB_OUTPUT"
+
+      - name: Smoke test the live site
+        run: |
+          for path in / /research/self-esteem-life-satisfaction /cv /documents/Shamsa-Kanwal-CV.pdf /sitemap.xml /robots.txt; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" "${{ steps.deploy.outputs.url }}${path}")
+            echo "${status} ${path}"
+            [ "$status" = "200" ] || exit 1
+          done

@@ -29,8 +29,9 @@ export function getSocialLinks(): Link[] {
     .map((key) => ({ label: SOCIAL_LABELS[key], url: data.socialLinks[key] }));
 }
 
+/** Site origin: explicit env var, then Netlify's built-in URL variable, then data.json. */
 export function absoluteUrl(path = "/"): string {
-  const base = (process.env.NEXT_PUBLIC_SITE_URL || data.site.url).replace(/\/$/, "");
+  const base = (process.env.NEXT_PUBLIC_SITE_URL || process.env.URL || data.site.url).replace(/\/$/, "");
   return `${base}${path === "/" ? "" : path}`;
 }
 

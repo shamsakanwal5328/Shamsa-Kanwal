@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "cv:pdf": "node scripts/generate-cv-pdf.mjs"
+    "cv:pdf": "node scripts/generate-cv-pdf.mjs",
+    "check:assets": "node scripts/check-data-assets.mjs"
   },
   "dependencies": {
     "next": "^16.3.8",
