@@ -62,10 +62,13 @@ jobs:
 
       - run: npm ci
 
+      - name: Check Netlify credentials
+        run: bash scripts/check-netlify-credentials.sh
+
       - name: Build and deploy preview to Netlify
         id: deploy
         run: |
-          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build \
+          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build --site "$NETLIFY_SITE_ID" \
             --alias "pr-${{ github.event.pull_request.number }}" \
             --message "PR #${{ github.event.pull_request.number }}: ${{ github.event.pull_request.title }}" \
             --json > deploy.json
@@ -107,10 +110,13 @@ jobs:
 
       - run: npm ci
 
+      - name: Check Netlify credentials
+        run: bash scripts/check-netlify-credentials.sh
+
       - name: Build and deploy to Netlify (production)
         id: deploy
         run: |
-          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build --prod \
+          npx --yes netlify-cli@${NETLIFY_CLI_VERSION} deploy --build --prod --site "$NETLIFY_SITE_ID" \
             --message "${{ github.sha }}" \
             --json > deploy.json
           echo "url=$(node -p "const d = require('./deploy.json'); d.url || d.deploy_url")" >> "$GITHUB_OUTPUT"
